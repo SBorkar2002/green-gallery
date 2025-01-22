@@ -31,7 +31,7 @@ export const Navbar = () => {
               <li>
                 <NavLink to="/handover">Handover</NavLink>
               </li>
-              <li>
+              <li id="login">
                 <NavLink to="/register">Login</NavLink>
               </li>
             </ul>
