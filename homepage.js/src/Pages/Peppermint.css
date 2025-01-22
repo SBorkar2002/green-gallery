@@ -1,0 +1,77 @@
+
+
+.Pplant-care-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background color for fallback */
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://e0.pxfuel.com/wallpapers/542/270/desktop-wallpaper-macbook-air-background-aesthetic-plants-novocom-top-cute-plant.jpg');
+    background-size: cover;  /* Ensures the background image covers the entire area */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures the container covers at least the entire height of the viewport */
+    width: 100vw; /* Ensures the container covers the entire width of the viewport */
+    margin: 0; /* Removes default margin to prevent scrollbars */
+}
+
+h2 {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 55px;
+    color: #2e8b57; /* Dark green color */
+}
+
+.Pplant-care-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Adjust max-width as needed */
+    width: 100%;
+    gap: 20px; /* Space between image and content */
+}
+
+.Pplant-image {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Pplant-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between list items */
+    margin-top: 35px;
+}
+
+.Pplant-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #004d40; /* Dark green color for text */
+}
+
+.Pplant-info li {
+    background-color: #e0f7fa; /* Light blue background for list items */
+    border: 1px solid #00796b; /* Darker blue border */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Pback-link {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #00796b; /* Blue color */
+    font-weight: bold;
+}
+
+.Pback-link:hover {
+    color: #004d40; /* Dark green on hover */
+}

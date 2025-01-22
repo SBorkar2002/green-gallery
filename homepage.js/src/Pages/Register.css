@@ -1,0 +1,145 @@
+.Rtitle a {
+	color: rgb(255, 255, 255);
+	font-size: 44px;
+}
+.Rtitle a:hover {
+	color: lightgreen;
+}
+.Rheader {
+	height: 18%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.Rsection {
+	display: flex; /* Flex container */
+	flex-direction: row; /* Horizontal layout */
+	width: 100%;
+	height: 100vh; /* Full viewport height */
+}
+
+.Rlogin-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%; /* Take half of the section */
+	height: 100%;
+	background: rgb(255, 255, 255);
+}
+
+.Rform-box {
+	width: 380px;
+	height: auto;
+	margin: 10% auto;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.Rbutton-box {
+	width: 250px;
+	margin: 20px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #0000001f;
+	border-radius: 0px;
+}
+
+.Rtoggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 120px;
+	height: 100%;
+	background-color: rgb(95, 95, 95);
+	border-radius: 0px;
+	transition: 0.5s;
+}
+
+.Rinput-group-login,
+.Rinput-group-register {
+	position: relative;
+	width: 280px;
+	transition: 0.5s;
+}
+
+.Rinput-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.Rsubmit-btn {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 15px;
+	background: linear-gradient(to right, lightgreen, white);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.Rsubmit-btn:hover {
+	background: skyblue;
+}
+
+.RimgL1 {
+	width: 100%; 
+	height: 100%;
+	position: relative;
+}
+
+.RimgL1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#error_message1,
+#error_message2,
+#error_message3,
+#error_message4 {
+	color: red;
+	font-style: oblique;
+}
+
+.Rforgot a {
+	text-decoration: none;
+	color: green;
+	font-size: 18px;
+}
+
+.Rforgot a:hover {
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+

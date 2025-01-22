@@ -1,0 +1,676 @@
+body {
+    background-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+.title a {
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+}
+
+.title a:hover {
+    color: lightgreen;
+}
+
+.navbar-logo {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+header {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000; /* Keep the navbar on top */
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    color: lightgreen;
+}
+a {
+	text-decoration: none;
+	color:rgb(114, 183, 80);
+}
+
+
+.Navbar-page{
+ background-color: #000;
+}
+.Navbar-slide {
+    margin-top: 100px; /* Pushes content below the fixed navbar */
+    padding: 20px;
+    color: white; /* Text color for visibility */
+}
+
+/*image slider*/
+.banner1, .banner2, .banner3, .banner4 {
+	margin-top: 3px;
+	height: 90%;
+	width: 98%;
+	position: absolute;
+}
+.imgslider img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: 50%;
+	right: 50%;
+	transform: translate(-50%,-50%);
+	border: solid;
+	border-width: 10px;
+	border-color: white;
+}
+
+.banner1 {
+	animation: slide1 10s linear infinite;
+}
+.banner2 {
+	animation: slide2 10s linear infinite;
+}
+.banner3 {
+	animation: slide3 10s linear infinite;
+}
+.banner4 {
+	animation: slide4 10s linear infinite;
+}
+@keyframes slide1 {
+	0%{
+		visibility: visible;
+	}
+	25% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: hidden;
+	}
+	75% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
+}
+@keyframes slide2 {
+	0%{
+		visibility: hidden;
+	}
+	25% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: visible;
+	}
+	75% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+@keyframes slide3 {
+	0%{
+		visibility: hidden;
+	}
+	25% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: hidden;
+	}
+	75% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+@keyframes slide4 {
+	0%{
+		visibility: hidden;
+	}
+	25% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: hidden;
+	}
+	75% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
+}
+
+/*icons*/
+.icons-container {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 15px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 600px;
+}
+.icons-container .icons {
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;	
+	border: solid;
+}
+.icons-container .icons img {
+	height: 5rem;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+.icons-container .icons h3 {
+	color: #333;
+	padding-bottom: 10px;
+	font-size: 25px;
+}
+.icons-container .icons span {
+	color: #555;
+	font-size: 15px;
+}
+b{
+    color: white;
+}
+
+
+/*trending*/
+.Trending-title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 290px; /* This controls the space above the title */
+    margin-bottom: 10px; /* Reducing this value brings the text closer to the images */
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.Trending {
+    display: flex; 
+    padding:10px;  
+    margin-top: 0;
+	height: 355px;
+	
+}
+
+.Trending .products {
+	margin-top: 0;
+    margin-bottom: 10px; 
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+    border: solid;
+    padding: 10px;
+    border-color: lightgray;
+	background-color: #1b1b1b;
+	height: 300px;
+}
+.Trending .products:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+.Trending .products .img {
+    height: 200px;
+    width: 100%;
+}
+.Trending .products .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Trending .products .content {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+	text-align: center;
+	margin-top: 20px;
+}
+.Trending .products .content h3 {
+	color: rgb(255, 255, 255);
+}
+.Trending .products .content h4 a:hover {
+	color: rgb(129, 208, 154);
+}
+.Trending .products .content a {
+	color: rgb(255, 255, 255);
+}
+.products .fa {
+	color: rgb(72, 214, 129);
+	font-size: 15px;
+}
+del {
+	color: gray;
+}
+
+/*categories*/
+.cat-title {
+	font-size: 30px;
+	text-align: center;
+	margin-top: -10px;
+	font-family: arial;
+	letter-spacing: 2px;
+
+}
+
+.Categories {
+    display: flex;
+    padding: 10px;
+    margin-top: 25px;
+}
+.Categories .card {
+    flex: 1;
+    margin: 10 10px;
+    
+}
+.Categories .card:hover {
+	background-color: #1b1b1b;
+    
+}
+.Categories .card .img {
+    height: 200px;
+    width: 90%;
+}
+.Categories .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Categories .card .content {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+	margin-top: 20px;
+}
+.Categories .card .content a {
+	color: rgb(255, 255, 255);
+}
+.Categories .card .content a:hover {
+	color: rgb(144, 255, 116);
+}
+
+/*selling*/
+.selling-title {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+	font-family: arial;
+	letter-spacing: 2px;
+}
+.selling {
+    display: flex; 
+    padding: 20px;   
+    
+}
+.selling .products {
+	margin-top: 10px;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+    border: solid;
+    padding: 10px;
+    border-color: lightgray;
+    background-color: #1b1b1b;
+}
+.selling .products:hover {
+	box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.2);
+}
+.selling .products .img {
+    height: 200px;
+    width: 100%;
+}
+.selling .products .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.selling .products .content {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.selling .products .content h3 {
+	color: green;
+}
+.selling .products .content a {
+	color: rgb(255, 255, 255);
+}
+.products .fa {
+	color: gold;
+	font-size: 15px;
+}
+del {
+	color: gray;
+}
+
+.text-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	margin-left: 50px;
+	padding-left: 50px;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 70px;
+	font-weight: 900;
+	mix-blend-mode: multiply;
+}
+
+/* certification */
+.b1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    padding: 20px;
+    width: 50%;
+    background-color: #F3F8EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    margin-right: 15px; /* Space between the logo and the text */
+}
+
+.logo h1 {
+    color: #4CAF50;
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo p {
+    color: #4CAF50;
+    margin: 0;
+    font-size: 14px;
+}
+
+.content h2 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.website-link {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.right-column {
+    width: 50%;
+}
+
+.right-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.video p {
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-size: 25px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	width: 50%;
+	font-weight: bolder;
+	margin-left: 400px;
+	border: solid;
+}
+.video {
+	margin-top: 30px;
+	text-align: center;
+	height: 550px;
+}
+.video iframe {
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+}
+
+/*footer*/
+footer {
+    position: relative;
+    z-index: 10;
+    margin-top: 70px;
+    bottom: 0px;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+}
+
+.BackToTop {
+	margin-bottom: 45px;
+	padding: 15px;
+	background-color: rgb(24, 24, 24);
+}
+button {
+    padding: 10px 20px;         
+    font-size: 16px;             
+    font-weight: bold;          
+    color: white;               
+    background-color: black;    
+    border: none;                
+    border-radius: 5px;          
+    cursor: pointer;            
+    transition: background-color 0.3s, color 0.3s;  
+}
+.BackToTop a {
+	color: white;
+}
+.BackToTop a:hover {
+	color: lightgreen;
+}
+.main-content {
+	display: flex;
+}
+.main-content .box {
+	flex-basis: 50%;
+	padding: 10px 20px;
+	margin-top: -125px;
+}
+.box h2 {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-right: 495px;
+	color: #000;
+	text-decoration: underline 5px;
+	
+}
+.box .content {
+	margin: 20px 0 0 0;
+	font-size: 18px;
+	position: relative;
+	
+}
+
+.left .content p {
+	margin-right: 300px;
+	text-align: justify;
+}
+.left .content .social {
+	margin: 20px 0 0 0;
+}
+.left .content .social a {
+	margin: 20px 0 0 0;
+}
+.left .content .social a span {
+	height: 40px;
+	width: 40px;
+	background: lightgreen;
+	color: black;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.left .content .social a span:hover {
+	background-color: rgb(24, 24, 24);
+	color: lightgreen;
+}
+.center .content .downtitle {
+	margin-top: 90px;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	border: solid;
+	background: rgb(0, 0, 0);
+}
+.center .content .downtitle:hover {
+	color: white;
+}
+.right form .text {
+	margin-bottom: 2px;
+}
+.right form .msg {
+	margin-top: 5px;
+}
+.right form input, .right form textarea {
+	width: 100%;
+	font-size: 20px;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid #222222;
+}
+.right form input:focus, .right form textarea:focus {
+	outline-color: #3498db;
+}
+.right form input {
+	height: 35px;
+}
+.right form .btn {
+	margin-top: 5px;
+}
+.right form .btn button {
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: rgb(24, 24, 24);
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.right form .btn button:hover {
+	background: red;
+	color: white;
+}
+.bottom center {
+	padding: 12px;
+	font-size: 18px;
+	background-color: rgb(24, 24, 24);
+}
+.bottom center span {
+	color: white;
+}
+
+hr{
+	color: white;
+}
+
+.footer-Name{
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+

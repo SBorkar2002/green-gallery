@@ -1,0 +1,109 @@
+
+/* section*/
+.Medicinal-section {
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	margin-left: 390px;
+}
+/*menu*/
+.Medicinal-menu-bar {
+	margin-top: -130px;
+	background-color: lightgreen;
+	width: 300px;
+	height: 800px;
+	border: solid;
+	border-color: white;
+    position: fixed;
+    margin-right: 1190px;
+}
+.Medicinal-menu-bar h1 {
+	padding-top: 15px;
+	padding-left: 90px;
+	padding-bottom: 20px;
+	font-size: 25px;
+	color: rgb(42, 42, 42);
+	background: snow;
+	border-top: 2px solid green;
+	border-bottom: 2px solid green;
+}
+.Medicinal-menu-bar ul button {
+	color: #fff;
+	background: lightgreen;
+	border: solid;
+}
+.Medicinal-menu-bar ul li {
+	width: 250px;
+	padding: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.Medicinal-menu-bar ul li:hover {
+	background: honeydew;
+}
+.Medicinal-menu-bar ul a button li {
+	text-decoration: none;
+	color: green;
+	font-size: 22px;
+}
+
+/*shop*/
+#Medicinal-shop-content {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	flex-wrap: wrap;
+	gap: 20px; /* Gap between items */
+	max-width: 800px; /* Limit maximum width */
+	margin-top: 120px; /* Adjust margin top */
+}
+
+.Medicinal-products {
+	width: calc(50% - 20px); /* Adjust width to fit two items per row with gap */
+	border: solid 1px lightgray;
+	padding: 20px; /* Adjust padding */
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+	margin-bottom: 20px; /* Add space between rows */
+}
+
+.Medicinal-products:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+}
+
+.Medicinal-img img {
+	width: 100%; /* Make images responsive */
+	height: 100%; /* Make images responsive */
+	object-fit: cover;
+}
+
+.Medicinal-products .content {
+	padding: 10px;
+	font-size: 20px;
+}
+
+.Medicinal-products .content h4 {
+	color: green;
+}
+
+.Medicinal-products .content a {
+	color: black;
+}
+
+.Medicinal-products .fa {
+	color: gold;
+	font-size: 15px;
+}
+
+del {
+	color: gray;
+}
+p {
+    color: black;
+}
+h4{
+    font-size: 30px;
+    margin: 10px;
+}

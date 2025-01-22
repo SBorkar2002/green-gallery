@@ -1,0 +1,129 @@
+/* Categories Page Styles */
+
+/* Body */
+body {
+    font-family: 'Helvetica', sans-serif; /* Change font for a different look */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Section */
+.shop-section {
+	width: 85%;
+	display: flex;
+	padding-top: 100px; /* Slightly less padding for a tighter layout */
+    margin-left: 100px; /* Adjust margin to create space for the fixed menu */
+}
+
+/* Menu Bar */
+.shop-menu-bar {
+	margin-top: 30px;
+	background-color: #004d4d; /* Dark teal for a distinctive look */
+	width: 280px;
+	height: auto; /* Dynamic height based on content */
+	border: solid 1px #004d4d; /* Border to match the background */
+	position: fixed;
+	border-radius: 5px; /* Rounded corners for a softer look */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.shop-menu-bar h1 {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	background: #007575; /* Lighter shade for the header */
+	border-top: 2px solid #004d4d;
+	border-bottom: 2px solid #004d4d;
+}
+
+.shop-menu-bar ul button {
+	color: white;
+	background: #007575;
+	border: solid 1px #004d4d;
+	border-radius: 3px; /* Rounded buttons */
+	cursor: pointer;
+}
+
+.shop-menu-bar ul li {
+	width: 270px;
+	padding: 10px;
+	text-align: left; /* Align text to the left */
+	line-height: 1.5;
+}
+
+.shop-menu-bar ul li:hover {
+	background: #005050; /* Darker teal on hover */
+}
+
+.shop-menu-bar ul li button {
+	color: #fff;
+	background: #004d4d;
+	border: solid 1px #007575;
+	font-size: 20px;
+	width: 100%;
+	padding: 12px;
+	cursor: pointer;
+}
+
+.shop-menu-bar ul li button:hover {
+	background: #007575;
+	color: white;
+}
+
+/* Shop Content */
+#shop-content {
+    margin-left: 320px; /* Adjust to create space for the fixed menu */
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for more items */
+    grid-gap: 25px; /* More space between grid items */
+    width: 95%;
+    margin-top: 20px;
+    max-width: 1400px; /* Wider max-width for more spacious layout */
+}
+
+.shop-products {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff; /* Ensure products stand out on the background */
+    width: 100%; /* Make sure each product takes full width */
+    border-radius: 5px; /* Rounded corners for products */
+}
+
+.shop-products:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More pronounced hover effect */
+    transform: scale(1.05); /* Slightly enlarge on hover for effect */
+}
+
+.shop-img img {
+    max-height: 220px;
+    object-fit: cover;
+    width: 100%; /* Image fills the container */
+    border-radius: 3px; /* Slight rounding for images */
+}
+
+.shop-content h4 {
+    color: #004d4d; /* Dark teal for headings */
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Back-to-top link */
+.BackToTop {
+    margin-top: 20px;
+    text-align: center;
+    color: #007575; /* Accent color for back-to-top */
+    font-weight: bold;
+    cursor: pointer;
+}
